@@ -89,7 +89,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void returnFunction(View view){
-        Intent intentRegister = new Intent(LoginActivity.this, RegisterActivity.class);
+        Intent intentRegister = new Intent(LoginActivity.this, MainActivity.class);
         LoginActivity.this.startActivity(intentRegister);
     }
 

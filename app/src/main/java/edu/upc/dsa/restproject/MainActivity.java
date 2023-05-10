@@ -20,8 +20,8 @@ import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
     private static final String SHARED_PREFS = "PROVA" ;
-    Button buttonLogin;
-    Button buttonRegistro;
+    //Button buttonLogin;
+    //Button buttonRegistro;
     TextInputEditText email;
     TextInputEditText password;
     Api APIservices;
@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
 
         email = findViewById(R.id.nombreUsuariotext);
         password = findViewById(R.id.passwordtext);
-        buttonLogin = (Button) findViewById(R.id.buttonLogin);
-        buttonRegistro = (Button) findViewById(R.id.buttonRegistro);
+        //buttonLogin = (Button) findViewById(R.id.buttonLogin);
+        //buttonRegistro = (Button) findViewById(R.id.buttonRegistro);
 
         Toast.makeText(this,"Please Register.", Toast.LENGTH_SHORT).show();
     }
@@ -70,12 +70,12 @@ public class MainActivity extends AppCompatActivity {
                 switch (response.code()){
                     case 201:
                         saveData();
-                        Intent intentRegister = new Intent(MainActivity.this, RecyclerViewAdapterUsers.class);
+                        Intent intentRegister = new Intent(MainActivity.this, LoginActivity.class);
                         User user =response.body();
-                        //assert usuarioId != null;
+                        //assert user != null;
                         saveVariable(user);
-                        MainActivity.this.startActivity(intentRegister);
                         Toast.makeText(MainActivity.this,"Login OK", Toast.LENGTH_SHORT).show();
+                        MainActivity.this.startActivity(intentRegister);
                         break;
                     case 404:
                         Toast.makeText(MainActivity.this,"Wrong Credentials!", Toast.LENGTH_SHORT).show();
@@ -91,16 +91,15 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    //EN REALITAT HAURIA DE MIRAR D'AGAFAR EL ID S HA DE MIRAR DE CANVIAR MES ENDAVANT:
     public void saveVariable(User user) {
-        SharedPreferences sharedPreferences= getSharedPreferences("userId", Context.MODE_PRIVATE);
+        SharedPreferences sharedPreferences= getSharedPreferences("user", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor =sharedPreferences.edit();
-        editor.putString("Id of the user ", user.getEmail());
-        Log.i("Saved ", user.getEmail());
+        editor.putString("User email", user.getEmail() + "User password: " + user.getPassword());
+        Log.i("Saved ", "User email: " + user.getEmail() + " User password: " + user.getPassword());
         editor.commit();
     }
 
-    public void btnClicked(View view) throws IOException {
+    /*public void btnClicked(View view) throws IOException {
         if(view== buttonLogin){
             Intent intentRegister = new Intent(MainActivity.this, LoginActivity.class);
             MainActivity.this.startActivity(intentRegister);
@@ -109,5 +108,10 @@ public class MainActivity extends AppCompatActivity {
             Intent intentRegister = new Intent(MainActivity.this, RegisterActivity.class);
             MainActivity.this.startActivity(intentRegister);
         }
+    }*/
+    public void btnRegisterClicked(View view){
+        Intent intentRegister = new Intent(MainActivity.this, RegisterActivity.class);
+        MainActivity.this.startActivity(intentRegister);
+
     }
 }

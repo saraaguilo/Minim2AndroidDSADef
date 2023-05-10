@@ -26,7 +26,6 @@ import retrofit2.Response;
 
 public class RegisterActivity extends AppCompatActivity {
     private static final String SHARED_PREFS = "PROVA";
-    Button buttonLogin;
     Button buttonRegister;
     TextInputEditText name;
     TextInputEditText surname;
@@ -52,12 +51,12 @@ public class RegisterActivity extends AppCompatActivity {
         Toast.makeText(this,"Please Register", Toast.LENGTH_SHORT).show();
     }
 
-    //EN REALITAT HAURIA DE MIRAR D'AGAFAR EL ID S HA DE MIRAR DE CANVIAR MES ENDAVANT:
+
     public void saveVariable(User user) {
         SharedPreferences sharedPreferences= getSharedPreferences("user", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor =sharedPreferences.edit();
-        editor.putString("User email:", user.getEmail());
-        Log.i("Saved ", user.getEmail());
+        editor.putString("User email", user.getEmail() + "User password: " + user.getPassword());
+        Log.i("Saved ", "User email: " + user.getEmail() + " User password: " + user.getPassword());
         editor.commit();
     }
 
@@ -81,6 +80,10 @@ public class RegisterActivity extends AppCompatActivity {
             Intent intentRegister = new Intent(RegisterActivity.this, MainActivity.class);
             RegisterActivity.this.startActivity(intentRegister);
         }
+    }
+    public void returnFunction(View view){
+        Intent intentRegister = new Intent(RegisterActivity.this, MainActivity.class);
+        RegisterActivity.this.startActivity(intentRegister);
     }
 
     public void register(View view) throws IOException {
