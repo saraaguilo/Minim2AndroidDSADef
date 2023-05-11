@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TableLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -26,6 +27,7 @@ public class LoginActivity extends AppCompatActivity {
     Api APIservice;
     Button buttonEmpezarPartida;
     Button buttonVerPartidas;
+    ProgressBar progressBar;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -36,9 +38,11 @@ public class LoginActivity extends AppCompatActivity {
         username = findViewById(R.id.nombreUsuariotext);
         buttonEmpezarPartida = (Button) findViewById(R.id.buttonEmpezarPartida);
         buttonVerPartidas = (Button) findViewById(R.id.buttonVerPartidas);
+        progressBar = findViewById(R.id.progressBar);
     }
 
     public void startGame(View view){
+        progressBar.setVisibility(View.VISIBLE);
         username = findViewById(R.id.nombreUsuariotext);
         APIservice = RetrofitClient.getInstance().getMyApi();
 
@@ -62,6 +66,7 @@ public class LoginActivity extends AppCompatActivity {
             }
             @Override
             public void onFailure(Call<Game> call, Throwable t) {
+                progressBar.setVisibility(View.INVISIBLE);
                 Snackbar snakyfail = Snackbar.make(view, "NETWORK FAILURE", 3000);
                 snakyfail.show();
             }
@@ -69,6 +74,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void seeGames(View view) throws IOException {
+        progressBar.setVisibility(View.VISIBLE);
         username = findViewById(R.id.nombreUsuariotext);
         APIservice = RetrofitClient.getInstance().getMyApi();
         Call<List<Game>> call = APIservice.getPartidasPlayer(username.getText().toString());

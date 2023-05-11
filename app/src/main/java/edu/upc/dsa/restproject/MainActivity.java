@@ -1,5 +1,6 @@
 package edu.upc.dsa.restproject;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -7,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.snackbar.Snackbar;
@@ -20,14 +22,17 @@ import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
     private static final String SHARED_PREFS = "PROVA" ;
-    //Button buttonLogin;
+    Button buttonLogin;
     //Button buttonRegistro;
     TextInputEditText email;
     TextInputEditText password;
     Api APIservices;
+    ProgressBar progressBar;
+    //DatabaseHelper db;
     public static final String TEXT1 = "User's email: ";
     public static final String TEXT2 = "User's password: ";
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +43,24 @@ public class MainActivity extends AppCompatActivity {
         //buttonLogin = (Button) findViewById(R.id.buttonLogin);
         //buttonRegistro = (Button) findViewById(R.id.buttonRegistro);
 
-        Toast.makeText(this,"Please Register.", Toast.LENGTH_SHORT).show();
+        /*buttonLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String e = email.getText().toString();
+                String p = password.getText().toString();
+                Boolean Chkemailpass=db.emailpassword(email,password);
+                if(Chkemailpass==true){ //Añadimos llaves ya que va a haber más de una línea de código
+                    Toast.makeText(getApplicationContext(),"Ha iniciado sesión correctamente",Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                    startActivity(intent);  //Abrimos la otra actividad
+                }else
+                    Toast.makeText(getApplicationContext(),"Email o contraseña incorrectos",Toast.LENGTH_SHORT).show();
+            }
+        });*/
+        progressBar = findViewById(R.id.progressBar);
+
+        Toast.makeText(this,"Please register or login if you haven't an account", Toast.LENGTH_SHORT).show();
     }
 
      public void saveData() {
@@ -51,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void login(View view) throws IOException {
+        progressBar.setVisibility(View.VISIBLE);
         email = findViewById(R.id.nombreUsuariotext);
         password = findViewById(R.id.passwordtext);
         APIservices = RetrofitClient.getInstance().getMyApi();
@@ -85,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<User> call, Throwable t) {
+                progressBar.setVisibility(View.INVISIBLE);
                 Snackbar snakyfail = Snackbar.make(view, "NETWORK FAILURE", 3000);
                 snakyfail.show();
             }

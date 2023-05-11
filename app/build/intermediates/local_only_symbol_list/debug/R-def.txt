@@ -24,6 +24,7 @@ id nombreUsuariotext
 id password1
 id passwordLayout
 id passwordtext
+id progressBar
 id puntos
 id returnBtn
 id returnBtn2

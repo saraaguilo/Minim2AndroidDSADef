@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,11 +33,14 @@ public class RegisterActivity extends AppCompatActivity {
     TextInputEditText email;
     TextInputEditText password;
     Api APIservice;
+    ProgressBar progressBar;
 
     public static final String TEXT1 = "User's name: ";
     public static final String TEXT2 = "User's surname: ";
     public static final String TEXT3 = "User's email: ";
     public static final String TEXT4 = "User's password: ";
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +52,7 @@ public class RegisterActivity extends AppCompatActivity {
         email = findViewById(R.id.emailtext);
         password = findViewById(R.id.password1);
         buttonRegister = findViewById(R.id.buttonUsuarioRegistrado);
+        progressBar = findViewById(R.id.progressBar);
         Toast.makeText(this,"Please Register", Toast.LENGTH_SHORT).show();
     }
 
@@ -87,6 +92,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     public void register(View view) throws IOException {
+        progressBar.setVisibility(View.VISIBLE);
         name = findViewById(R.id.nombreUsuariotext);
         surname = findViewById(R.id.surnameUsuariotext);
         email = findViewById(R.id.emailtext);
@@ -102,6 +108,7 @@ public class RegisterActivity extends AppCompatActivity {
         call.enqueue(new Callback<User>() {
             @Override
             public void onResponse(Call<User> call, Response<User> response) {
+                progressBar.setVisibility(View.INVISIBLE);
                 Log.i("PROBLEM","OnResponse");
                 switch (response.code()){
                     case 201:
@@ -121,6 +128,7 @@ public class RegisterActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<User> call, Throwable t) {
+                progressBar.setVisibility(View.INVISIBLE);
                 Log.i("PROBLEM","OnFailure",t);
                 Snackbar snakyfail = Snackbar.make(view, "NETWORK FAILURE", 3000);
                 snakyfail.show();

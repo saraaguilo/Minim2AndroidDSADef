@@ -2963,6 +2963,7 @@ int id percent 0x7f08016b
 int id pin 0x7f08016c
 int id position 0x7f08016d
 int id postLayout 0x7f08016e
+int id progressBar 0x7f080213
 int id progress_circular 0x7f08016f
 int id progress_horizontal 0x7f080170
 int id puntos 0x7f080171

@@ -7,6 +7,18 @@
     android:background="#BEC9DA"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
@@ -34,7 +46,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="textPersonName"
-            android:text="Email" />
+            android:hint="Email"
+            android:text=" "/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -54,7 +67,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="Name"
+            android:text=" "/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -74,7 +88,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Surname" />
+            android:hint="Surname"
+            android:text=" "/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -94,7 +109,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="textPersonName"
-            android:text="Password" />
+            android:hint="Password"
+            android:text=" "/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -176,6 +192,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
