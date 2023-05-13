@@ -40,9 +40,11 @@ id textView5
 id textView6
 id textView7
 id textView8
+id title2
 layout activity_login
 layout activity_main
 layout activity_registro
+layout principal_main
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name

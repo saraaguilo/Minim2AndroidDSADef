@@ -3091,6 +3091,7 @@ id textinput_prefix_text
 id textinput_suffix_text
 id time
 id title
+id title2
 id titleDividerNoCustom
 id title_template
 id toggle
@@ -3297,6 +3298,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout principal_main
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

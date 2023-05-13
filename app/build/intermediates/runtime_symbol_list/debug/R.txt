@@ -3090,6 +3090,7 @@ int id textinput_prefix_text 0x7f0801e9
 int id textinput_suffix_text 0x7f0801ea
 int id time 0x7f0801eb
 int id title 0x7f0801ec
+int id title2 0x7f080214
 int id titleDividerNoCustom 0x7f0801ed
 int id title_template 0x7f0801ee
 int id toggle 0x7f0801ef
@@ -3296,6 +3297,7 @@ int layout notification_template_custom_big 0x7f0b0062
 int layout notification_template_icon_group 0x7f0b0063
 int layout notification_template_part_chronometer 0x7f0b0064
 int layout notification_template_part_time 0x7f0b0065
+int layout principal_main 0x7f0b007a
 int layout select_dialog_item_material 0x7f0b0066
 int layout select_dialog_multichoice_material 0x7f0b0067
 int layout select_dialog_singlechoice_material 0x7f0b0068

@@ -8,8 +8,8 @@
         "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "edu.upc.dsa.restproject.app-merged_res-46:/layout_activity_main.xml.flat",
-        "source": "edu.upc.dsa.restproject.app-main-48:/layout/activity_main.xml"
+        "merged": "edu.upc.dsa.restproject.app-merged_res-46:/layout_principal_main.xml.flat",
+        "source": "edu.upc.dsa.restproject.app-main-48:/layout/principal_main.xml"
     },
     {
         "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -24,20 +24,8 @@
         "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\mipmap-xhdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\layout\\activity_main.xml"
-    },
-    {
         "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\mipmap-xhdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\mipmap-hdpi_ic_launcher_round.webp.flat",
@@ -56,28 +44,52 @@
         "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\xml\\backup_rules.xml"
-    },
-    {
         "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\xml\\backup_rules.xml"
     },
     {
         "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\xml_data_extraction_rules.xml.flat",
         "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\xml\\data_extraction_rules.xml"
     },
     {
+        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
         "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\layout_activity_registro.xml.flat",
         "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\layout\\activity_registro.xml"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "edu.upc.dsa.restproject.app-merged_res-46:/layout_activity_registro.xml.flat",
+        "source": "edu.upc.dsa.restproject.app-main-48:/layout/activity_registro.xml"
+    },
+    {
+        "merged": "edu.upc.dsa.restproject.app-merged_res-46:/layout_activity_main.xml.flat",
+        "source": "edu.upc.dsa.restproject.app-main-48:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "edu.upc.dsa.restproject.app-merged_res-46:/layout_activity_login.xml.flat",
+        "source": "edu.upc.dsa.restproject.app-main-48:/layout/activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\drawable-v24_ic_launcher_foreground.xml.flat",

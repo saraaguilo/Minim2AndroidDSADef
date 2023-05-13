@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -21,7 +22,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String SHARED_PREFS = "PROVA" ;
+    static final String SHARED_PREFS = "PROVA" ;
     Button buttonLogin;
     //Button buttonRegistro;
     TextInputEditText email;
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         email = findViewById(R.id.nombreUsuariotext);
         password = findViewById(R.id.passwordtext);
+
         //buttonLogin = (Button) findViewById(R.id.buttonLogin);
         //buttonRegistro = (Button) findViewById(R.id.buttonRegistro);
 

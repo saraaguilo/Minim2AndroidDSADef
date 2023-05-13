@@ -3,6 +3,7 @@ package edu.upc.dsa.restproject;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
@@ -35,7 +36,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        username = findViewById(R.id.nombreUsuariotext);
+        //username = findViewById(R.id.nombreUsuariotext);
         buttonEmpezarPartida = (Button) findViewById(R.id.buttonEmpezarPartida);
         buttonVerPartidas = (Button) findViewById(R.id.buttonVerPartidas);
         progressBar = findViewById(R.id.progressBar);
@@ -43,7 +44,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void startGame(View view){
         progressBar.setVisibility(View.VISIBLE);
-        username = findViewById(R.id.nombreUsuariotext);
+        //username = findViewById(R.id.nombreUsuariotext);
         APIservice = RetrofitClient.getInstance().getMyApi();
 
         VOPlayerGameCredencials credencials = new VOPlayerGameCredencials(username.getText().toString());
