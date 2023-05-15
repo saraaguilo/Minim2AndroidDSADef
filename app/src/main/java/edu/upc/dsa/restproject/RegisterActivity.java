@@ -103,7 +103,7 @@ public class RegisterActivity extends AppCompatActivity {
         Log.i("PROBLEM", email.getText().toString());
         Log.i("PROBLEM", password.getText().toString());
 
-        User user = new User(name.getText().toString(),surname.getText().toString(),email.getText().toString(), password.getText().toString());
+        User user = new User(name.getText().toString(),surname.getText().toString(),email.getText().toString(),password.getText().toString());
         Call<User> call = APIservice.register(user);
         call.enqueue(new Callback<User>() {
             @Override

@@ -90,7 +90,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:hint="Email"
-            android:text=" "/>
+            android:text=""/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -111,7 +111,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:hint="Password"
-            android:text=" "/> />
+            android:text=""/>
 
     </com.google.android.material.textfield.TextInputLayout>
 

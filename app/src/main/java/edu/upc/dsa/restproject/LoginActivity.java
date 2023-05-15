@@ -60,7 +60,7 @@ public class LoginActivity extends AppCompatActivity {
                     case 404:
                         Toast.makeText(LoginActivity.this, "This game does not exists", Toast.LENGTH_SHORT).show();
                         break;
-                    case 400:
+                    case 401:
                         Toast.makeText(LoginActivity.this, "This player is already playing", Toast.LENGTH_SHORT).show();
                         break;
                 }
