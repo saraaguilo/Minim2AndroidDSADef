@@ -2758,6 +2758,7 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
+id description
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -2918,6 +2919,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id name
 id nav_controller_view_tag
 id nav_host_fragment_container
 id navigation_bar_item_active_indicator_view
@@ -2964,7 +2966,9 @@ id percent
 id pin
 id position
 id postLayout
+id price
 id progressBar
+id progressBar2
 id progress_circular
 id progress_horizontal
 id puntos
@@ -2973,6 +2977,7 @@ id ratio
 id rectangles
 id returnBtn
 id returnBtn2
+id returnBtn3
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3006,6 +3011,8 @@ id selected
 id selection_type
 id sharedValueSet
 id sharedValueUnset
+id shopButton
+id shopButton2
 id shortcut
 id showCustom
 id showHome
@@ -3228,6 +3235,7 @@ layout abc_tooltip
 layout activity_login
 layout activity_main
 layout activity_registro
+layout activity_shop
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

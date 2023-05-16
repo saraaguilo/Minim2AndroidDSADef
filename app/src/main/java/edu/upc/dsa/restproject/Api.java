@@ -3,6 +3,7 @@ package edu.upc.dsa.restproject;
 import java.util.List;
 import edu.upc.dsa.restproject.models.Credentials;
 import edu.upc.dsa.restproject.models.Game;
+import edu.upc.dsa.restproject.models.Item;
 import edu.upc.dsa.restproject.models.User;
 import edu.upc.dsa.restproject.models.VOPlayerGameCredencials;
 import retrofit2.Call;
@@ -18,6 +19,8 @@ public interface Api {
 
     @POST("game/register")
     Call<User> register(@Body User user);
+    @GET("game/shop")
+    Call<List<Item>> getShop();
 
     @PUT("game/startGame")
     Call<Game> startGame(@Body VOPlayerGameCredencials credencials);
@@ -25,6 +28,6 @@ public interface Api {
     @PUT("game/seeGames")
     Call<Game> seeGames(@Path("id") String id);
 
-    @GET("player/{id}/partidas")
+    @GET("game/{id}/partidas")
     Call<List<Game>> getPartidasPlayer(@Path("id") String id);
 }

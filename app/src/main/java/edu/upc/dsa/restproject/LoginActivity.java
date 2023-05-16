@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
@@ -28,6 +29,7 @@ public class LoginActivity extends AppCompatActivity {
     Api APIservice;
     Button buttonEmpezarPartida;
     Button buttonVerPartidas;
+    Button shopButton;
     ProgressBar progressBar;
 
     @SuppressLint("MissingInflatedId")
@@ -39,6 +41,7 @@ public class LoginActivity extends AppCompatActivity {
         //username = findViewById(R.id.nombreUsuariotext);
         buttonEmpezarPartida = (Button) findViewById(R.id.buttonEmpezarPartida);
         buttonVerPartidas = (Button) findViewById(R.id.buttonVerPartidas);
+        shopButton = (Button) findViewById(R.id.shopButton);
         progressBar = findViewById(R.id.progressBar);
     }
 
@@ -100,10 +103,12 @@ public class LoginActivity extends AppCompatActivity {
         LoginActivity.this.startActivity(intentRegister);
     }
 
-    public void btnClicked(View view) throws IOException {
-        /*if(view== buttonEmpezarPartida){
+    public void shopFunction (View view){
+        Intent intentRegister = new Intent(LoginActivity.this, ShopActivity.class);
+        LoginActivity.this.startActivity(intentRegister);
+    }
 
-        }*/
+    public void btnClicked(View view) throws IOException {
         if(view== buttonVerPartidas){
             TableLayout tableLayout = findViewById(R.id.tableLayout);
             View tableRow = findViewById(R.id.tableLayout);
