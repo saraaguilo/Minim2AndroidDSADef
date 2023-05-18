@@ -47,7 +47,6 @@ public class LoginActivity extends AppCompatActivity {
 
     public void startGame(View view){
         progressBar.setVisibility(View.VISIBLE);
-        //username = findViewById(R.id.nombreUsuariotext);
         APIservice = RetrofitClient.getInstance().getMyApi();
 
         VOPlayerGameCredencials credencials = new VOPlayerGameCredencials(username.getText().toString());

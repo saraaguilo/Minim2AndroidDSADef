@@ -7,8 +7,16 @@ color purple_700
 color teal_200
 color teal_700
 color white
+drawable artepersonaje
+drawable cienciapersonaje
+drawable deportespersonaje
+drawable entretenimientopersonaje
+drawable fondo
+drawable geografiapersonaje
+drawable historiapersonaje
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable trivialfondo
 id buttonEmpezarPartida
 id buttonLogin
 id buttonRegistro
