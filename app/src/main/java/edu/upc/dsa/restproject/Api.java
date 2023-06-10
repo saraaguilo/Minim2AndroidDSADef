@@ -23,15 +23,13 @@ public interface Api {
     Call<UserRegister> register(@Body UserRegister user);
     @GET("game/shop")
     Call<List<Item>> getShop();
-
     @PUT("game/startGame")
     Call<Game> startGame(@Body VOPlayerGameCredencials credencials);
-
     @PUT("game/seeGames")
     Call<Game> seeGames(@Path("id") String id);
 
     @GET("game/{id}/partidas")
     Call<List<Game>> getPartidasPlayer(@Path("id") String id);
-    @PUT("shop/gadget/buy/{idItem}/{name}/{idUser}")
-    Call<Void> buyAGadget(@Path("idItem") String idItem,@Path("name") String name, @Path("idUser") String idUser);
+    @PUT("game/buyItems/{idItem}/{name}/{idUser}")
+    Call<Void> buyItems(@Path("idItem") String idItem,@Path("name") String name, @Path("idUser") String idUser);
 }

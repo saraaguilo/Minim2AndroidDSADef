@@ -16,6 +16,7 @@ import android.widget.ProgressBar;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -33,12 +34,15 @@ import edu.upc.dsa.restproject.RetrofitClient;
 import edu.upc.dsa.restproject.models.Game;
 import edu.upc.dsa.restproject.models.Item;
 import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class ShopActivity extends AppCompatActivity implements RecyclerClickViewListener {
 
     Api APIservice;
-    Button returnBtn;
     String idUser;
+    String idItem;
+    String name;
     private RecyclerView recyclerViewItems;
     private RecyclerViewAdapterItems adapterItems;
 
@@ -77,9 +81,32 @@ public class ShopActivity extends AppCompatActivity implements RecyclerClickView
     @Override
     public void recyclerViewListClicked(int position) {
         Item item = adapterItems.items.get(position);
-        Intent intent=new Intent(ShopActivity.this,BuyActivity.class);
-        saveVariables(item, idUser);
-        ShopActivity.this.startActivity(intent);
+        saveVariables(item, this.idUser);
+        APIservice = RetrofitClient.getInstance().getMyApi();
+        Call<Void> call = APIservice.buyItems(this.idItem,this.name,this.idUser);
+        call.enqueue(new Callback<Void>() {
+            @Override
+            public void onResponse(Call<Void> call, Response<Void> response) {
+                switch (response.code()){
+                    case 201:
+                        Toast.makeText(ShopActivity.this,"Successful", Toast.LENGTH_SHORT).show();
+                        break;
+                    case 403:
+                        Toast.makeText(ShopActivity.this,"Insufficient money!", Toast.LENGTH_SHORT).show();
+                        break;
+                    case 401:
+                        Toast.makeText(ShopActivity.this,"Item does not exist", Toast.LENGTH_SHORT).show();
+                        break;
+                    case 409:
+                        Toast.makeText(ShopActivity.this,"Item already purchased", Toast.LENGTH_SHORT).show();
+                        break;
+                }
+            }
+            @Override
+            public void onFailure(Call<Void> call, Throwable t) {
+                Toast.makeText(ShopActivity.this,"Network Failure", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
     public void getidUser(){
         SharedPreferences sharedPreferences = getSharedPreferences("idUser", Context.MODE_PRIVATE);
