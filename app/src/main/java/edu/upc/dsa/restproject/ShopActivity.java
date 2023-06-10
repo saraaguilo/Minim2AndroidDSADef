@@ -34,12 +34,15 @@ import edu.upc.dsa.restproject.models.Game;
 import edu.upc.dsa.restproject.models.Item;
 import retrofit2.Call;
 
-public class ShopActivity extends AppCompatActivity {
+public class ShopActivity extends AppCompatActivity implements RecyclerClickViewListener {
 
     Api APIservice;
     Button returnBtn;
-    Button shopBtn;
-    ProgressBar progressBar;
+    String idUser;
+    private RecyclerView recyclerViewItems;
+    private RecyclerViewAdapterItems adapterItems;
+    String userId;
+
     private ArrayList<TableRow> rows;
 
 
@@ -48,13 +51,25 @@ public class ShopActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shop);
 
-        //username = findViewById(R.id.nombreUsuariotext);
-        shopBtn = (Button) findViewById(R.id.shopButton2);
-        returnBtn = (Button) findViewById(R.id.returnBtn3);
-        progressBar = findViewById(R.id.progressBar2);
+        recyclerViewItems=(RecyclerView)findViewById(R.id.recyclerItem);
+        Log.d("DDDD", ""+recyclerViewItems);
+        recyclerViewItems.setLayoutManager(new LinearLayoutManager(this));
+        APIservice = RetrofitClient.getInstance().getMyApi();
+        Call<List<Item>> call = APIservice.getShop();
+        try {
+            adapterItems = new RecyclerViewAdapterItems(call.execute().body(), this);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        recyclerViewItems.setAdapter(adapterItems);
+
+    }
+    public void returnFunction(View view) {
+        Intent intent=new Intent(ShopActivity.this, LoginActivity.class);
+        startActivity(intent);
     }
 
-    public void getShop(View view) throws IOException {
+    /**public void getShop(View view) throws IOException {
         //progressBar.setVisibility(View.VISIBLE);
         APIservice = RetrofitClient.getInstance().getMyApi();
         Call<List<Item>> call = APIservice.getShop();
@@ -82,11 +97,22 @@ public class ShopActivity extends AppCompatActivity {
         tableLayout.addView(row);
         rows.add(row);
         //rows++;
+    }**/
+    public void saveVariables(Item itemClicked) {
+        SharedPreferences sharedPreferences= getSharedPreferences("Item", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor =sharedPreferences.edit();
+        editor.putString("Name", itemClicked.getName());
+        editor.putString("Description", itemClicked.getDescription());
+        editor.putString("Price",String.valueOf(itemClicked.getPrice()));
+        editor.apply();
     }
-    public void returnFunction2(View view){
-        Intent intentRegister = new Intent(ShopActivity.this, LoginActivity.class);
-        ShopActivity.this.startActivity(intentRegister);
-    }
+    @Override
+    public void recyclerViewListClicked(int position) {
+        Item gadget=adapterItems.items.get(position);
+        Intent intent=new Intent(ShopActivity.this,BuyActivity.class);
+        saveVariables(gadget);
+        ShopActivity.this.startActivity(intent);
 
+    }
 
 }

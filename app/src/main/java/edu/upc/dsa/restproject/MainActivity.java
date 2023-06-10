@@ -134,16 +134,6 @@ public class MainActivity extends AppCompatActivity {
         editor.commit();
     }
 
-    /*public void btnClicked(View view) throws IOException {
-        if(view== buttonLogin){
-            Intent intentRegister = new Intent(MainActivity.this, LoginActivity.class);
-            MainActivity.this.startActivity(intentRegister);
-        }
-        if(view== buttonRegistro){
-            Intent intentRegister = new Intent(MainActivity.this, RegisterActivity.class);
-            MainActivity.this.startActivity(intentRegister);
-        }
-    }*/
     public void btnRegisterClicked(View view){
         Intent intentRegister = new Intent(MainActivity.this, RegisterActivity.class);
         MainActivity.this.startActivity(intentRegister);

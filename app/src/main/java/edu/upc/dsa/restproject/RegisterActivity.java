@@ -21,6 +21,7 @@ import java.io.IOException;
 
 import edu.upc.dsa.restproject.models.Credentials;
 import edu.upc.dsa.restproject.models.User;
+import edu.upc.dsa.restproject.models.UserRegister;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -57,7 +58,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
 
-    public void saveVariable(User user) {
+    public void saveVariable(UserRegister user) {
         SharedPreferences sharedPreferences= getSharedPreferences("user", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor =sharedPreferences.edit();
         editor.putString("User email", user.getEmail() + "User password: " + user.getPassword());
@@ -103,18 +104,18 @@ public class RegisterActivity extends AppCompatActivity {
         Log.i("PROBLEM", email.getText().toString());
         Log.i("PROBLEM", password.getText().toString());
 
-        User user = new User(name.getText().toString(),surname.getText().toString(),email.getText().toString(),password.getText().toString());
-        Call<User> call = APIservice.register(user);
-        call.enqueue(new Callback<User>() {
+        UserRegister user = new UserRegister(name.getText().toString(),surname.getText().toString(),email.getText().toString(),password.getText().toString());
+        Call<UserRegister> call = APIservice.register(user);
+        call.enqueue(new Callback<UserRegister>() {
             @Override
-            public void onResponse(Call<User> call, Response<User> response) {
+            public void onResponse(Call<UserRegister> call, Response<UserRegister> response) {
                 progressBar.setVisibility(View.INVISIBLE);
                 Log.i("PROBLEM","OnResponse");
                 switch (response.code()){
                     case 201:
                         saveData();
                         Intent intentRegister = new Intent(RegisterActivity.this, MainActivity.class);
-                        User user = response.body();
+                        UserRegister user = response.body();
                         //assert user != null;
                         saveVariable(user);
                         Toast.makeText(RegisterActivity.this,"Register OK", Toast.LENGTH_SHORT).show();
@@ -125,9 +126,8 @@ public class RegisterActivity extends AppCompatActivity {
                         break;
                 }
             }
-
             @Override
-            public void onFailure(Call<User> call, Throwable t) {
+            public void onFailure(Call<UserRegister> call, Throwable t) {
                 progressBar.setVisibility(View.INVISIBLE);
                 Log.i("PROBLEM","OnFailure",t);
                 Snackbar snakyfail = Snackbar.make(view, "NETWORK FAILURE", 3000);

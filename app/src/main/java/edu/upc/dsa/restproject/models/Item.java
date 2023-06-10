@@ -3,15 +3,17 @@ package edu.upc.dsa.restproject.models;
 public class Item {
     String name;
     String description;
-    double price;
+    int price;
+    String image;
 
     public Item() {
     }
 
-    public Item(String name, String description, double price) {
+    public Item(String name, String description, int price, String image) {
         this.name = name;
         this.description = description;
         this.price = price;
+        this.image = image;
     }
 
     public String getName() {
@@ -34,7 +36,13 @@ public class Item {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(int price) {
         this.price = price;
+    }
+    public String getImage() {
+        return image;
+    }
+    public void setImage(String image) {
+        this.image = image;
     }
 }

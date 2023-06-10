@@ -1,6 +1,7 @@
 package edu.upc.dsa.restproject.models;
 
 public class User {
+    String idUser;
     String name;
     String surname;
     String email;
@@ -8,13 +9,15 @@ public class User {
 
     public User() {    }
 
-    public User(String name, String surname, String email, String password) {
+    public User(String idUser,String name, String surname, String email, String password) {
+        this.idUser = idUser;
         this.name = name;
         this.surname = surname;
         this.email = email;
         this.password = password;
     }
-
+    public String getIdUser(){return idUser;}
+    public void setIdUser(String idUser){this.idUser = idUser;}
     public String getName() {
         return name;
     }

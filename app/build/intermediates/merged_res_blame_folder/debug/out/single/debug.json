@@ -1,134 +1,142 @@
 [
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\drawable_artepersonaje.png.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\drawable\\artepersonaje.png"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/layout_activity_itemcard.xml.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/layout/activity_itemcard.xml"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/layout_activity_registro.xml.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/layout/activity_registro.xml"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\drawable_deportespersonaje.png.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\drawable\\deportespersonaje.png"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\drawable\\ic_launcher_background.xml"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\drawable_fondo.png.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\drawable\\fondo.png"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/layout_activity_shop.xml.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/layout/activity_shop.xml"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\drawable_entretenimientopersonaje.png.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\drawable\\entretenimientopersonaje.png"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/drawable-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/layout_principal_main.xml.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/layout/principal_main.xml"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\drawable_trivialfondo.png.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\drawable\\trivialfondo.png"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/drawable_water.png.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/drawable/water.png"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/drawable_cienciapersonaje.png.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/drawable/cienciapersonaje.png"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/drawable_historiapersonaje.png.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/drawable/historiapersonaje.png"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\mipmap-anydpi-v33_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\mipmap-anydpi-v33\\ic_launcher.xml"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/mipmap-anydpi-v33_ic_launcher.xml.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/mipmap-anydpi-v33/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\layout\\activity_login.xml"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\xml\\backup_rules.xml"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/drawable_artepersonaje.png.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/drawable/artepersonaje.png"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\xml\\data_extraction_rules.xml"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/drawable_trivialfondo.png.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/drawable/trivialfondo.png"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\drawable_geografiapersonaje.png.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\drawable\\geografiapersonaje.png"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/drawable_geografiapersonaje.png.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/drawable/geografiapersonaje.png"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\layout_activity_registro.xml.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\layout\\activity_registro.xml"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\layout_principal_main.xml.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\layout\\principal_main.xml"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "edu.upc.dsa.restproject.app-merged_res-46:/layout_activity_main.xml.flat",
-        "source": "edu.upc.dsa.restproject.app-main-48:/layout/activity_main.xml"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/xml_backup_rules.xml.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/xml/backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\drawable_cienciapersonaje.png.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\drawable\\cienciapersonaje.png"
-    },
-    {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
         "merged": "edu.upc.dsa.restproject.app-merged_res-46:/layout_activity_shop.xml.flat",
         "source": "edu.upc.dsa.restproject.app-main-48:/layout/activity_shop.xml"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\layout\\activity_main.xml"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/drawable_helmet.jpeg.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/drawable/helmet.jpeg"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/drawable_entretenimientopersonaje.png.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/drawable/entretenimientopersonaje.png"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\layout_activity_shop.xml.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\layout\\activity_shop.xml"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/drawable_deportespersonaje.png.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/drawable/deportespersonaje.png"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\drawable_historiapersonaje.png.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\drawable\\historiapersonaje.png"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "edu.upc.dsa.restproject.app-merged_res-46:/layout_activity_login.xml.flat",
-        "source": "edu.upc.dsa.restproject.app-main-48:/layout/activity_login.xml"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/drawable_sword.jpeg.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/drawable/sword.jpeg"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-merged_res-46:\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Anna Sabater Nualart\\.gradle\\daemon\\7.5\\edu.upc.dsa.restproject.app-main-48:\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/drawable_fondo.png.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/drawable/fondo.png"
+    },
+    {
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/layout_activity_login.xml.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/layout_activity_main.xml.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/layout/activity_main.xml"
     }
 ]

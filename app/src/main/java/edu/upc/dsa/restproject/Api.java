@@ -5,6 +5,7 @@ import edu.upc.dsa.restproject.models.Credentials;
 import edu.upc.dsa.restproject.models.Game;
 import edu.upc.dsa.restproject.models.Item;
 import edu.upc.dsa.restproject.models.User;
+import edu.upc.dsa.restproject.models.UserRegister;
 import edu.upc.dsa.restproject.models.VOPlayerGameCredencials;
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -18,7 +19,7 @@ public interface Api {
     Call<User> login(@Body Credentials credentials);
 
     @POST("game/register")
-    Call<User> register(@Body User user);
+    Call<UserRegister> register(@Body UserRegister user);
     @GET("game/shop")
     Call<List<Item>> getShop();
 
