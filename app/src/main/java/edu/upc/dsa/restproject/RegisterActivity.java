@@ -19,7 +19,6 @@ import com.google.android.material.textfield.TextInputEditText;
 
 import java.io.IOException;
 
-import edu.upc.dsa.restproject.models.Credentials;
 import edu.upc.dsa.restproject.models.User;
 import edu.upc.dsa.restproject.models.UserRegister;
 import retrofit2.Call;

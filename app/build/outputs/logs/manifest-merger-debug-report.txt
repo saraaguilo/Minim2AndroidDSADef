@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:2:1-63:12
-INJECTED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:2:1-63:12
-INJECTED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:2:1-63:12
-INJECTED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:2:1-63:12
+ADDED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:2:1-71:12
+INJECTED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:2:1-71:12
+INJECTED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:2:1-71:12
+INJECTED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:2:1-71:12
 MERGED from [androidx.navigation:navigation-ui:2.5.2] /Users/tonibote4/.gradle/caches/transforms-3/2ac37de682b8dfda57b01d5b8ba106e9/transformed/navigation-ui-2.5.2/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.6.1] /Users/tonibote4/.gradle/caches/transforms-3/1f5b68807f74f1f76df3b67d19ddfdc5/transformed/material-1.6.1/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/tonibote4/.gradle/caches/transforms-3/4b929ab10fd806b94f86bd527f89dd0a/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
@@ -76,22 +76,22 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/
 MERGED from [androidx.print:print:1.0.0] /Users/tonibote4/.gradle/caches/transforms-3/ae4109ec1e873f2074e4c3a60211a759/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/tonibote4/.gradle/caches/transforms-3/73f130ba62a38ea2b5c3476f7af43454/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:exifinterface:27.1.0] /Users/tonibote4/.gradle/caches/transforms-3/97c69c9af66987bae1b6208c84fe157f/transformed/exifinterface-27.1.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:2:1-63:12
-INJECTED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:2:1-63:12
-INJECTED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:2:1-71:12
+INJECTED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:2:1-71:12
+INJECTED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:2:1-71:12
 	package
 		INJECTED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml
-		ADDED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:2:1-63:12
+		ADDED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:2:1-71:12
 		INJECTED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml
-		ADDED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:2:1-63:12
+		ADDED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:2:1-71:12
 		INJECTED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml
-		ADDED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:2:1-63:12
+		ADDED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:2:1-71:12
 		INJECTED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:2:11-69
@@ -106,7 +106,7 @@ MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /User
 	android:name
 		ADDED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:4:22-64
 application
-ADDED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:5:5-62:19
+ADDED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:5:5-70:19
 MERGED from [com.google.android.material:material:1.6.1] /Users/tonibote4/.gradle/caches/transforms-3/1f5b68807f74f1f76df3b67d19ddfdc5/transformed/material-1.6.1/AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.6.1] /Users/tonibote4/.gradle/caches/transforms-3/1f5b68807f74f1f76df3b67d19ddfdc5/transformed/material-1.6.1/AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/tonibote4/.gradle/caches/transforms-3/4b929ab10fd806b94f86bd527f89dd0a/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -233,6 +233,14 @@ ADDED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:54
 		ADDED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:56:13-36
 	android:name
 		ADDED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:55:13-41
+activity#edu.upc.dsa.restproject.BuyActivity
+ADDED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:62:9-69:20
+	android:label
+		ADDED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:65:13-45
+	android:exported
+		ADDED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:64:13-36
+	android:name
+		ADDED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml:63:13-40
 uses-sdk
 INJECTED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/tonibote4/Desktop/Rest_DSA/app/src/main/AndroidManifest.xml

@@ -3,7 +3,6 @@ package edu.upc.dsa.restproject.models;
 public class idUser {
     String idUser;
     public idUser(){};
-
     public idUser(String idUser) {
         this.setIdUser(idUser);
     }

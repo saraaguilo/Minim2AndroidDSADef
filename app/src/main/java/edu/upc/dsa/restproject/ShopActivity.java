@@ -41,15 +41,12 @@ public class ShopActivity extends AppCompatActivity implements RecyclerClickView
     String idUser;
     private RecyclerView recyclerViewItems;
     private RecyclerViewAdapterItems adapterItems;
-    String userId;
-
-    private ArrayList<TableRow> rows;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shop);
+        this.getidUser();
 
         recyclerViewItems=(RecyclerView)findViewById(R.id.recyclerItem);
         Log.d("DDDD", ""+recyclerViewItems);
@@ -68,51 +65,25 @@ public class ShopActivity extends AppCompatActivity implements RecyclerClickView
         Intent intent=new Intent(ShopActivity.this, LoginActivity.class);
         startActivity(intent);
     }
-
-    /**public void getShop(View view) throws IOException {
-        //progressBar.setVisibility(View.VISIBLE);
-        APIservice = RetrofitClient.getInstance().getMyApi();
-        Call<List<Item>> call = APIservice.getShop();
-
-        List<Item> items = call.execute().body();
-        assert items != null;
-        TableLayout tableLayout = findViewById(R.id.tableLayout);
-        TableRow row = new TableRow(this);
-        TableRow.LayoutParams lp = new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT);
-        row.setLayoutParams(lp);
-        rows = new ArrayList<TableRow>();
-
-        for (Item item : items) {
-            TextView name = new TextView(this);
-            TextView description = new TextView(this);
-            TextView price = new TextView(this);
-
-            name.setText(item.getName());
-            description.setText(item.getDescription());
-            price.setText(Double.toString(item.getPrice()));
-            row.addView(name);
-            row.addView(description);
-            row.addView(price);
-        }
-        tableLayout.addView(row);
-        rows.add(row);
-        //rows++;
-    }**/
-    public void saveVariables(Item itemClicked) {
+    public void saveVariables(Item itemClicked, String idUser) {
         SharedPreferences sharedPreferences= getSharedPreferences("Item", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor =sharedPreferences.edit();
         editor.putString("Name", itemClicked.getName());
         editor.putString("Description", itemClicked.getDescription());
         editor.putString("Price",String.valueOf(itemClicked.getPrice()));
+        editor.putString("idUser",idUser);
         editor.apply();
     }
     @Override
     public void recyclerViewListClicked(int position) {
-        Item gadget=adapterItems.items.get(position);
+        Item item = adapterItems.items.get(position);
         Intent intent=new Intent(ShopActivity.this,BuyActivity.class);
-        saveVariables(gadget);
+        saveVariables(item, idUser);
         ShopActivity.this.startActivity(intent);
-
+    }
+    public void getidUser(){
+        SharedPreferences sharedPreferences = getSharedPreferences("idUser", Context.MODE_PRIVATE);
+        this.idUser = sharedPreferences.getString("idUser",null);
     }
 
 }

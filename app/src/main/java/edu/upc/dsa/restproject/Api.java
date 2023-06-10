@@ -7,6 +7,7 @@ import edu.upc.dsa.restproject.models.Item;
 import edu.upc.dsa.restproject.models.User;
 import edu.upc.dsa.restproject.models.UserRegister;
 import edu.upc.dsa.restproject.models.VOPlayerGameCredencials;
+import edu.upc.dsa.restproject.models.idUser;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
@@ -16,7 +17,7 @@ import retrofit2.http.Path;
 
 public interface Api {
     @POST("game/login")
-    Call<User> login(@Body Credentials credentials);
+    Call<idUser> login(@Body Credentials credentials);
 
     @POST("game/register")
     Call<UserRegister> register(@Body UserRegister user);
@@ -31,4 +32,6 @@ public interface Api {
 
     @GET("game/{id}/partidas")
     Call<List<Game>> getPartidasPlayer(@Path("id") String id);
+    @PUT("shop/gadget/buy/{idItem}/{name}/{idUser}")
+    Call<Void> buyAGadget(@Path("idItem") String idItem,@Path("name") String name, @Path("idUser") String idUser);
 }

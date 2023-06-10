@@ -8,6 +8,17 @@
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">RESTPROJECT</string>
+    <string name="buy">BUY</string>
+    <string name="description">Description:</string>
+    <string name="identifier">Item ID:</string>
+    <string name="name">Name:</string>
+    <string name="price">Price:</string>
+    <string name="purchase_of">Purchase of</string>
+    <string name="updating_description">updating_description</string>
+    <string name="updating_idItem">updating_idItem</string>
+    <string name="updating_name">updating_name</string>
+    <string name="updating_price">updating_price</string>
+    <string name="updating_title_item"> updating_title_item </string>
     <style name="Theme.RESTPROJECT" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>

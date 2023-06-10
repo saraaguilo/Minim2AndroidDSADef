@@ -96,8 +96,8 @@
         "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "edu.upc.dsa.restproject.app-merged_res-46:/layout_activity_shop.xml.flat",
-        "source": "edu.upc.dsa.restproject.app-main-48:/layout/activity_shop.xml"
+        "merged": "edu.upc.dsa.restproject.app-merged_res-46:/layout_activity_buy.xml.flat",
+        "source": "edu.upc.dsa.restproject.app-main-48:/layout/activity_buy.xml"
     },
     {
         "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/drawable_helmet.jpeg.flat",
@@ -122,6 +122,10 @@
     {
         "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/layout_activity_buy.xml.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/layout/activity_buy.xml"
     },
     {
         "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/drawable_fondo.png.flat",
