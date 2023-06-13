@@ -20,6 +20,7 @@ drawable ic_launcher_foreground
 drawable sword
 drawable trivialfondo
 drawable water
+id buttonAbuse
 id buttonEmpezarPartida
 id buttonLogin
 id buttonRegistro
@@ -28,6 +29,8 @@ id buttonVerPartidas
 id compartir
 id coordinatorLayout
 id description
+id descriptionLayout
+id descriptionText
 id emailLayout
 id emailtext
 id emailtxt
@@ -63,6 +66,7 @@ id textView7
 id textView8
 id title2
 id title_items
+layout abuse_activity
 layout activity_itemcard
 layout activity_login
 layout activity_main

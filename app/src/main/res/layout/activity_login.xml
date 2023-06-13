@@ -75,7 +75,7 @@
         android:layout_width="334dp"
         android:layout_height="166dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="420dp"
+        android:layout_marginTop="470dp"
         android:layout_marginEnd="50dp"
         android:background="#ECEFF1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -151,4 +151,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonVerPartidas" />
+    <Button
+        android:id="@+id/buttonAbuse"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:onClick="seeGames"
+        android:text="Report an abuse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/progressBar"
+        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
