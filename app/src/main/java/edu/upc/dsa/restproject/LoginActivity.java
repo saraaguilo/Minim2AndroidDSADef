@@ -1,7 +1,9 @@
 package edu.upc.dsa.restproject;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -17,20 +19,23 @@ import com.google.android.material.textfield.TextInputEditText;
 import java.io.IOException;
 import java.util.List;
 import edu.upc.dsa.restproject.models.Game;
+import edu.upc.dsa.restproject.models.User;
 import edu.upc.dsa.restproject.models.VOPlayerGameCredencials;
+import edu.upc.dsa.restproject.models.idUser;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
 //UN COP T'HAS LOGGEJAT EN EL MAIN ENTESEN EL ACTIVITY_LOGIN ON POTS COMENÇAR LA PARTIDA AMB EL USUARI ESTABLERT
 //I VEURE CERTES DADES, es a dir, LA FUNCIÓ DOLOGIN ESTA AL MAINACTIVITY
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity{
     TextInputEditText username;
     Api APIservice;
     Button buttonEmpezarPartida;
     Button buttonVerPartidas;
     Button shopButton;
     ProgressBar progressBar;
+    String idUser;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -43,6 +48,10 @@ public class LoginActivity extends AppCompatActivity {
         buttonVerPartidas = (Button) findViewById(R.id.buttonVerPartidas);
         shopButton = (Button) findViewById(R.id.shopButton);
         progressBar = findViewById(R.id.progressBar);
+
+        SharedPreferences sharedPreferences = getSharedPreferences("idUser", Context.MODE_PRIVATE);
+        this.idUser = sharedPreferences.getString("idUser",null);
+        this.getUser(this.idUser);
     }
 
     public void startGame(View view){
@@ -103,7 +112,8 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void shopFunction (View view){
-        Intent intentRegister = new Intent(LoginActivity.this, ShopActivity.class);
+        saveVariable(this.idUser);
+        Intent intentRegister = new Intent(this, ShopActivity.class);
         LoginActivity.this.startActivity(intentRegister);
     }
 
@@ -118,5 +128,34 @@ public class LoginActivity extends AppCompatActivity {
             nivelActual.setText(Integer.toString(game.getNivelActual()));
             tableLayout.addView(tableRow);
         }
+    }
+    public void getUser(String idUser){
+        APIservice = RetrofitClient.getInstance().getMyApi();
+        Call<User> call = APIservice.getUser(this.idUser);
+        call.enqueue(new Callback<User>() {
+            @Override
+            public void onResponse(Call<User> call, Response<User> response) {
+                switch (response.code()){
+                    case 201:
+                        saveVariable(idUser);
+                        Toast.makeText(LoginActivity.this,"Successful", Toast.LENGTH_SHORT).show();
+                        break;
+                    case 404:
+                        Toast.makeText(LoginActivity.this,"Something went wrong", Toast.LENGTH_SHORT).show();
+                        break;
+                }
+            }
+            @Override
+            public void onFailure(Call<User> call, Throwable t) {
+                Toast.makeText(LoginActivity.this,"NETWORK FAILURE :(", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+    public void saveVariable(String idUser) {
+        SharedPreferences sharedPreferences = getSharedPreferences("idUser", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("idUser",idUser);
+        //Log.i("SAVING: ",idUser);
+        editor.apply();
     }
 }

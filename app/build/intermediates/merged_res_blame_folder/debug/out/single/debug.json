@@ -4,16 +4,16 @@
         "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/layout/activity_itemcard.xml"
     },
     {
-        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/drawable/ic_launcher_background.xml"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/layout_activity_registro.xml.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/layout/activity_registro.xml"
     },
     {
         "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/xml_data_extraction_rules.xml.flat",
         "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/layout_activity_registro.xml.flat",
-        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/layout/activity_registro.xml"
+        "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/drawable/ic_launcher_background.xml"
     },
     {
         "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/layout_activity_shop.xml.flat",
@@ -78,6 +78,10 @@
     {
         "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-main-48:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "edu.upc.dsa.restproject.app-merged_res-46:/layout_activity_itemcard.xml.flat",
+        "source": "edu.upc.dsa.restproject.app-main-48:/layout/activity_itemcard.xml"
     },
     {
         "merged": "/Users/tonibote4/.gradle/daemon/7.5/edu.upc.dsa.restproject.app-merged_res-46:/mipmap-xhdpi_ic_launcher.webp.flat",

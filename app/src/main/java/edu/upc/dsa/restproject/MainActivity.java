@@ -123,10 +123,10 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     public void saveVariable(idUser idUser) {
-        SharedPreferences sharedPreferences= getSharedPreferences("idUser", Context.MODE_PRIVATE);
+        SharedPreferences sharedPreferences = getSharedPreferences("idUser", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("idUser",idUser.getIdUser());
-        Log.i("SAVING: ",idUser.getIdUser());
+        //Log.i("SAVING: ",idUser.getIdUser());
         editor.commit();
     }
 

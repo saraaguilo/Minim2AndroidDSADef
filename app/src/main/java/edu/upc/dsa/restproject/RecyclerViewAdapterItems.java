@@ -22,12 +22,13 @@ public class RecyclerViewAdapterItems extends RecyclerView.Adapter<RecyclerViewA
 
     public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
-        public TextView name,description,price;
+        public TextView idItem,name,description,price;
         ImageView image;
 
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+            idItem=(TextView)itemView.findViewById(R.id.idItem);
             name=(TextView)itemView.findViewById(R.id.name);
             description=(TextView)itemView.findViewById(R.id.description);
             price=(TextView)itemView.findViewById(R.id.price);
@@ -55,6 +56,7 @@ public class RecyclerViewAdapterItems extends RecyclerView.Adapter<RecyclerViewA
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        holder.idItem.setText(items.get(position).getIdItem());
         holder.name.setText(items.get(position).getName());
         holder.description.setText(items.get(position).getDescription());
         holder.price.setText(Integer.toString((int) items.get(position).getPrice()));

@@ -18,16 +18,16 @@ import retrofit2.http.Path;
 public interface Api {
     @POST("game/login")
     Call<idUser> login(@Body Credentials credentials);
-
     @POST("game/register")
     Call<UserRegister> register(@Body UserRegister user);
     @GET("game/shop")
     Call<List<Item>> getShop();
+    @GET("game/getUser/{idUser}")
+    Call<User> getUser(@Path("idUser") String idUser);
     @PUT("game/startGame")
     Call<Game> startGame(@Body VOPlayerGameCredencials credencials);
     @PUT("game/seeGames")
     Call<Game> seeGames(@Path("id") String id);
-
     @GET("game/{id}/partidas")
     Call<List<Game>> getPartidasPlayer(@Path("id") String id);
     @PUT("game/buyItems/{idItem}/{name}/{idUser}")
