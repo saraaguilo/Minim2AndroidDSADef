@@ -2712,6 +2712,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id buttonAbuse
 id buttonEmpezarPartida
 id buttonLogin
 id buttonPanel
@@ -2771,6 +2772,8 @@ id default_activity_button
 id deltaRelative
 id dependency_ordering
 id description
+id descriptionLayout
+id descriptionText
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -3246,6 +3249,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout abuse_activity
 layout activity_itemcard
 layout activity_login
 layout activity_main

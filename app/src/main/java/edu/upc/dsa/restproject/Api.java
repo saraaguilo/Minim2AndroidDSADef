@@ -1,6 +1,8 @@
 package edu.upc.dsa.restproject;
 
 import java.util.List;
+
+import edu.upc.dsa.restproject.models.Abuse;
 import edu.upc.dsa.restproject.models.Credentials;
 import edu.upc.dsa.restproject.models.Game;
 import edu.upc.dsa.restproject.models.Item;
@@ -27,9 +29,10 @@ public interface Api {
     Call<Game> startGame(@Body VOPlayerGameCredencials credencials);
     @PUT("game/seeGames")
     Call<Game> seeGames(@Path("id") String id);
-
     @GET("game/{id}/partidas")
     Call<List<Game>> getPartidasPlayer(@Path("id") String id);
     @PUT("game/buyItems/{idItem}/{name}/{idUser}")
     Call<Void> buyItems(@Path("idItem") String idItem,@Path("name") String name, @Path("idUser") String idUser);
+    @POST("game/abuse")
+    Call<Void> postAbuse(@Body Abuse abuse);
 }

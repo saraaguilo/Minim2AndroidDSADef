@@ -30,6 +30,7 @@ public class LoginActivity extends AppCompatActivity {
     Button buttonEmpezarPartida;
     Button buttonVerPartidas;
     Button shopButton;
+    Button buttonAbuse;
     ProgressBar progressBar;
 
     @SuppressLint("MissingInflatedId")
@@ -38,10 +39,10 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        //username = findViewById(R.id.nombreUsuariotext);
         buttonEmpezarPartida = (Button) findViewById(R.id.buttonEmpezarPartida);
         buttonVerPartidas = (Button) findViewById(R.id.buttonVerPartidas);
         shopButton = (Button) findViewById(R.id.shopButton);
+        buttonAbuse = (Button) findViewById(R.id.buttonAbuse);
         progressBar = findViewById(R.id.progressBar);
     }
 
@@ -106,6 +107,7 @@ public class LoginActivity extends AppCompatActivity {
         Intent intentRegister = new Intent(LoginActivity.this, ShopActivity.class);
         LoginActivity.this.startActivity(intentRegister);
     }
+
 
     public void btnClicked(View view) throws IOException {
         if(view== buttonVerPartidas){
