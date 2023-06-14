@@ -40,7 +40,10 @@ public class ShopActivity extends AppCompatActivity implements RecyclerClickView
 
     Api APIservice;
     String idUser;
-
+    String idItem;
+    String name;
+    String description;
+    String price;
     private RecyclerView recyclerViewItems;
     private RecyclerViewAdapterItems adapterItems;
 
@@ -69,12 +72,22 @@ public class ShopActivity extends AppCompatActivity implements RecyclerClickView
     }
     public void saveVariables(Item itemClicked, String idUser) {
         SharedPreferences sharedPreferences= getSharedPreferences("Item", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor =sharedPreferences.edit();
-        editor.putString("Name", itemClicked.getName());
-        editor.putString("Description", itemClicked.getDescription());
-        editor.putString("Price",String.valueOf(itemClicked.getPrice()));
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("name", itemClicked.getName());
+        editor.putString("description", itemClicked.getDescription());
+        editor.putString("price",String.valueOf(itemClicked.getPrice()));
         editor.putString("idUser",idUser);
+        editor.putString("idItem",itemClicked.getIdItem());
         editor.apply();
+    }
+
+    public void getVariables(){
+        SharedPreferences sharedPreferences = getSharedPreferences("Item", Context.MODE_PRIVATE);
+        this.idUser = sharedPreferences.getString("idUser", null);
+        this.idItem = sharedPreferences.getString("idItem", null);
+        this.name = sharedPreferences.getString("name",null);
+        this.description = sharedPreferences.getString("description", null);
+        this.price = sharedPreferences.getString("price", null);
     }
 
     @Override
@@ -89,6 +102,7 @@ public class ShopActivity extends AppCompatActivity implements RecyclerClickView
     public void recyclerViewListClicked(int position) {
         Item item = adapterItems.items.get(position);
         saveVariables(item, this.idUser);
+        this.getVariables();
         APIservice = RetrofitClient.getInstance().getMyApi();
         Call<Void> call = APIservice.buyItems(this.idItem,this.name,this.idUser);
         call.enqueue(new Callback<Void>() {

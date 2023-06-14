@@ -39,6 +39,7 @@ id emailtext
 id emailtxt
 id englishlanguage
 id faqtitle
+id idItem
 id itemImage
 id linea
 id my_new_imageView

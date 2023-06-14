@@ -1,6 +1,7 @@
 package edu.upc.dsa.restproject.models;
 
 public class Item {
+    String idItem;
     String name;
     String description;
     int price;
@@ -9,11 +10,20 @@ public class Item {
     public Item() {
     }
 
-    public Item(String name, String description, int price, String image) {
+    public Item(String idItem,String name, String description, int price, String image) {
+        this.idItem = idItem;
         this.name = name;
         this.description = description;
         this.price = price;
         this.image = image;
+    }
+
+    public String getIdItem() {
+        return idItem;
+    }
+
+    public void setIdItem(String idItem) {
+        this.idItem = idItem;
     }
 
     public String getName() {

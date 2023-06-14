@@ -2856,6 +2856,7 @@ id horizontal_only
 id icon
 id icon_group
 id icon_only
+id idItem
 id ifRoom
 id ignore
 id ignoreRequest
