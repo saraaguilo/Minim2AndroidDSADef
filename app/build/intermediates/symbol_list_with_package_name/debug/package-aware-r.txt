@@ -2612,7 +2612,9 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id FAQButton
 id FUNCTION
+id LanguageButton
 id META
 id NO_DEBUG
 id SHIFT
@@ -2723,6 +2725,7 @@ id cache_measures
 id callMeasure
 id cancel_button
 id carryVelocity
+id catalanlanguage
 id center
 id centerCrop
 id centerInside
@@ -2811,12 +2814,14 @@ id emailtext
 id emailtxt
 id end
 id endToStart
+id englishlanguage
 id enterAlways
 id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id fade
+id faqtitle
 id fill
 id fill_horizontal
 id fill_vertical
@@ -2936,6 +2941,8 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id my_new_imageView
+id my_new_recycler_view
 id name
 id nav_controller_view_tag
 id nav_host_fragment_container
@@ -3029,6 +3036,7 @@ id selection_type
 id sharedValueSet
 id sharedValueUnset
 id shopButton
+id shoptitle
 id shortcut
 id showCustom
 id showHome
@@ -3045,6 +3053,7 @@ id snap
 id snapMargins
 id south
 id spacer
+id spanishlanguage
 id special_effects_controller_view_tag
 id spline
 id split_action_bar
@@ -3250,11 +3259,14 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout abuse_activity
+layout activity_faq
 layout activity_itemcard
+layout activity_language
 layout activity_login
 layout activity_main
 layout activity_registro
 layout activity_shop
+layout activity_tienda
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

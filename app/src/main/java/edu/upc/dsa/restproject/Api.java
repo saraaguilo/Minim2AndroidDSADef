@@ -6,7 +6,6 @@ import edu.upc.dsa.restproject.models.Abuse;
 import edu.upc.dsa.restproject.models.Credentials;
 import edu.upc.dsa.restproject.models.Game;
 import edu.upc.dsa.restproject.models.Item;
-import edu.upc.dsa.restproject.models.User;
 import edu.upc.dsa.restproject.models.UserRegister;
 import edu.upc.dsa.restproject.models.VOPlayerGameCredencials;
 import edu.upc.dsa.restproject.models.idUser;
@@ -35,4 +34,6 @@ public interface Api {
     Call<Void> buyItems(@Path("idItem") String idItem,@Path("name") String name, @Path("idUser") String idUser);
     @POST("game/abuse")
     Call<Void> postAbuse(@Body Abuse abuse);
+    @GET("game/user/{idUser}")
+    Call<idUser> getUser(@Path("idUser") String idUser);
 }

@@ -23,11 +23,11 @@
         android:layout_width="319dp"
         android:layout_height="50dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="150dp"
         android:layout_marginEnd="50dp"
         android:background="#303F9F"
         android:backgroundTint="#303F9F"
-        android:onClick="startGame"
+        android:onClick="EmpezarPartida"
         android:text="Start Game"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -72,10 +72,10 @@
 
     <ScrollView
         android:id="@+id/scrollView"
-        android:layout_width="334dp"
-        android:layout_height="166dp"
+        android:layout_width="309dp"
+        android:layout_height="80dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="420dp"
+        android:layout_marginTop="590dp"
         android:layout_marginEnd="50dp"
         android:background="#ECEFF1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -139,16 +139,63 @@
         tools:ignore="MissingConstraints" />
 
     <Button
+        android:id="@+id/FAQButton"
+        android:layout_width="326dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="410dp"
+        android:layout_marginEnd="50dp"
+        android:onClick="FAQButton"
+        android:text="FAQ"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/LanguageButton"
+        android:layout_width="326dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="470dp"
+        android:layout_marginEnd="50dp"
+        android:onClick="LanguageButton"
+        android:text="Language"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
         android:id="@+id/shopButton"
         android:layout_width="326dp"
         android:layout_height="53dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="50dp"
-        android:onClick="shopFunction"
+        android:onClick="shopButton"
         android:text="Shop"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonVerPartidas" />
+
+    <Button
+        android:id="@+id/buttonAbuse"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="50dp"
+        android:onClick="abuseReport"
+        android:text="Report an abuse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

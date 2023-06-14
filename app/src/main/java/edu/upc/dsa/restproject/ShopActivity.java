@@ -4,7 +4,6 @@ import static edu.upc.dsa.restproject.MainActivity.SHARED_PREFS;
 import static edu.upc.dsa.restproject.MainActivity.TEXT1;
 import static edu.upc.dsa.restproject.MainActivity.TEXT2;
 
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -41,8 +40,7 @@ public class ShopActivity extends AppCompatActivity implements RecyclerClickView
 
     Api APIservice;
     String idUser;
-    String idItem;
-    String name;
+
     private RecyclerView recyclerViewItems;
     private RecyclerViewAdapterItems adapterItems;
 
@@ -53,7 +51,7 @@ public class ShopActivity extends AppCompatActivity implements RecyclerClickView
         this.getidUser();
 
         recyclerViewItems=(RecyclerView)findViewById(R.id.recyclerItem);
-        Log.d("DDDD", ""+recyclerViewItems);
+        Log.d("DDDD", "" + recyclerViewItems);
         recyclerViewItems.setLayoutManager(new LinearLayoutManager(this));
         APIservice = RetrofitClient.getInstance().getMyApi();
         Call<List<Item>> call = APIservice.getShop();
@@ -78,7 +76,16 @@ public class ShopActivity extends AppCompatActivity implements RecyclerClickView
         editor.putString("idUser",idUser);
         editor.apply();
     }
+
     @Override
+    public void recyclerViewListClicked(int position) {
+        Item item = adapterItems.items.get(position);
+        Intent intent=new Intent(ShopActivity.this, LoginActivity.class);
+        saveVariables(item, this.idUser);
+        ShopActivity.this.startActivity(intent);
+    }
+
+    /*@Override
     public void recyclerViewListClicked(int position) {
         Item item = adapterItems.items.get(position);
         saveVariables(item, this.idUser);
@@ -107,7 +114,8 @@ public class ShopActivity extends AppCompatActivity implements RecyclerClickView
                 Toast.makeText(ShopActivity.this,"Network Failure", Toast.LENGTH_SHORT).show();
             }
         });
-    }
+    }*/
+
     public void getidUser(){
         SharedPreferences sharedPreferences = getSharedPreferences("idUser", Context.MODE_PRIVATE);
         this.idUser = sharedPreferences.getString("idUser",null);

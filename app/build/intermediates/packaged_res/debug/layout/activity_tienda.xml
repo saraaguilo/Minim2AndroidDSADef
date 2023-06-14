@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/fondo">
+
+<!-- A RecyclerView with some commonly used attributes -->
+<TextView
+    android:id="@+id/shoptitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="70dp"
+    android:text="SHOP"
+    android:textColor="#000000"
+    android:textSize="50sp"
+    android:textStyle="bold"
+    android:textAlignment="center"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_new_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@+id/shoptitle"
+        android:layout_marginTop="-6dp"
+        android:background="@drawable/fondo"
+        android:scrollbars="vertical" />
+
+<ImageView
+    android:id="@+id/my_new_imageView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginRight="12dp"
+    android:layout_marginBottom="12dp"
+    android:elevation="2dp"
+    android:src="@android:drawable/ic_menu_add" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/returnBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="returnFunction"
+        android:shadowColor="#303F9F"
+        android:text="Return"
+        android:textColorLink="#303F9F"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</RelativeLayout>

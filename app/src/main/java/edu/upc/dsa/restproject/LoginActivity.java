@@ -1,5 +1,138 @@
 package edu.upc.dsa.restproject;
+import static com.google.firebase.messaging.Constants.MessageNotificationKeys.TAG;
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ProgressBar;
+import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.messaging.FirebaseMessaging;
+import com.google.android.material.textfield.TextInputEditText;
+import edu.upc.dsa.restproject.models.idUser;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
+public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
+    public Button buttonEmpezarPartida;
+    public Button buttonVerPartidas;
+    public Button shopButton;
+    public Button buttonAbuse;
+    public Button FAQButton;
+    public Button LanguageButton;
+
+    public ProgressBar progressBar;
+   // public String userId;
+    Api APIservice;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
+/*
+        SharedPreferences sharedPreferences = getSharedPreferences("userId", Context.MODE_PRIVATE);
+        this.userId = sharedPreferences.getString("userId", null).toString();
+        this.getUserById(this.userId);*/
+        this.initializeViews();
+    }
+
+    @SuppressLint("NonConstantResourceId")
+    @Override
+    public void onClick(View view) {
+        Intent i;
+        switch (view.getId()) {
+            case R.id.buttonEmpezarPartida:
+                i = new Intent(this, LoginActivity.class); //s'haura de canviar
+                startActivity(i);
+                break;
+            case R.id.shopButton:
+                //saveUserId(this.userId);
+                i = new Intent(this, TiendaActivity.class);
+                startActivity(i);
+                break;
+            case R.id.buttonAbuse:
+                i = new Intent(this, AbuseActivity.class);
+                startActivity(i);
+                break;
+            case R.id.FAQButton:
+                i = new Intent(this, FaqActivity.class);
+                startActivity(i);
+                break;
+            case R.id.LanguageButton:
+                i = new Intent(this, LanguageActivity.class);
+                startActivity(i);
+                break;
+        }
+    }
+
+    public void initializeViews() {
+        buttonEmpezarPartida = findViewById(R.id.buttonEmpezarPartida);
+        buttonVerPartidas = findViewById(R.id.buttonVerPartidas);
+        shopButton = findViewById(R.id.shopButton);
+        buttonAbuse = findViewById(R.id.buttonAbuse);
+        progressBar = findViewById(R.id.progressBar);
+        FAQButton = findViewById(R.id.FAQButton);
+        LanguageButton = findViewById(R.id.LanguageButton);
+
+
+        buttonEmpezarPartida.setOnClickListener(this);
+        buttonVerPartidas.setOnClickListener(this);
+        shopButton.setOnClickListener(this);
+        buttonAbuse.setOnClickListener(this);
+        FAQButton.setOnClickListener(this);
+        LanguageButton.setOnClickListener(this);
+    }
+
+    public void saveVariables(idUser userId) {
+        SharedPreferences sharedPreferences = getSharedPreferences("userId", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("id", userId.getIdUser());
+        Log.i("SAVING: ", userId.getIdUser());
+        editor.apply();
+    }
+
+    public void saveUserId(String userId) {
+        SharedPreferences sharedPreferences = getSharedPreferences("userId", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("userId", userId);
+        Log.i("SAVING: ", userId);
+        editor.apply();
+    }
+
+    public void subscribeToFirebase() {
+        FirebaseMessaging.getInstance().subscribeToTopic("admin")
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        String msg = "Subscribed as ADMIN";
+                        if (!task.isSuccessful()) {
+                            msg = "Subscribe failed";
+                        }
+                        Log.d(TAG, msg);
+                        Toast.makeText(LoginActivity.this, msg, Toast.LENGTH_SHORT).show();
+                    }
+                });
+    }
+    public void returnFunction(View view){
+        Intent intentRegister = new Intent(LoginActivity.this, MainActivity.class);
+        LoginActivity.this.startActivity(intentRegister);
+    }
+}
+
+
+
+
+
+/*
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,9 +155,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-//UN COP T'HAS LOGGEJAT EN EL MAIN ENTESEN EL ACTIVITY_LOGIN ON POTS COMENÇAR LA PARTIDA AMB EL USUARI ESTABLERT
-//I VEURE CERTES DADES, es a dir, LA FUNCIÓ DOLOGIN ESTA AL MAINACTIVITY
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
     TextInputEditText username;
     Api APIservice;
     Button buttonEmpezarPartida;
@@ -104,8 +235,8 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void shopFunction (View view){
-        Intent intentRegister = new Intent(LoginActivity.this, ShopActivity.class);
-        LoginActivity.this.startActivity(intentRegister);
+        Intent intent = new Intent(LoginActivity.this, ShopActivity.class);
+        LoginActivity.this.startActivity(intent);
     }
 
 
@@ -121,4 +252,9 @@ public class LoginActivity extends AppCompatActivity {
             tableLayout.addView(tableRow);
         }
     }
-}
+
+    @Override
+    public void onClick(View view) {
+
+    }
+}*/

@@ -19,12 +19,10 @@ public class RecyclerViewAdapterItems extends RecyclerView.Adapter<RecyclerViewA
     private static RecyclerClickViewListener listener;
     public List<Item> items;
 
-
     public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
         public TextView name,description,price;
         ImageView image;
-
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);

@@ -1,33 +1,29 @@
-package com.example.juegodsarest3.models;
+package edu.upc.dsa.restproject.models;
 
 public class FAQ {
 
-    String pregunta;
+    String question;
+    String answer;
 
-    public String getPregunta() {
-        return pregunta;
+    public String getQuestion() {
+        return question;
     }
-
-    public void setPregunta(String pregunta) {
-        this.pregunta = pregunta;
+    public void setQuestion(String question) {
+        this.question = question;
     }
-
-    public String getRespuesta() {
-        return respuesta;
+    public String getAnswer() {
+        return answer;
     }
-
-    public void setRespuesta(String respuesta) {
-        this.respuesta = respuesta;
+    public void setAnswer(String answer) {
+        this.answer = answer;
     }
 
     public FAQ(){
 
     }
 
-    public FAQ(String pregunta,String respuesta){
-        setPregunta(pregunta);
-        setRespuesta(respuesta);
+    public FAQ(String question, String answer){
+        setQuestion(question);
+        setAnswer(answer);
     }
-    String respuesta;
-
 }
