@@ -7,6 +7,7 @@ import edu.upc.dsa.restproject.models.Credentials;
 import edu.upc.dsa.restproject.models.FAQ;
 import edu.upc.dsa.restproject.models.Game;
 import edu.upc.dsa.restproject.models.Item;
+import edu.upc.dsa.restproject.models.Question;
 import edu.upc.dsa.restproject.models.User;
 import edu.upc.dsa.restproject.models.UserRegister;
 import edu.upc.dsa.restproject.models.VOPlayerGameCredencials;
@@ -39,4 +40,6 @@ public interface Api {
     Call<idUser> getUser(@Path("idUser") String idUser);
     @GET("game/faqs")
     Call<List<FAQ>> getFAQs();
+    @POST("user/question")
+    Call<Void> addQuestion(@Body Question question);
 }

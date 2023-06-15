@@ -118,4 +118,8 @@ public class MainActivity extends AppCompatActivity {
         MainActivity.this.startActivity(intentRegister);
 
     }
+    public void askQuestion(View view){
+        Intent intentQuestion = new Intent(MainActivity.this, QuestionActivity.class);
+        MainActivity.this.startActivity(intentQuestion);
+    }
 }

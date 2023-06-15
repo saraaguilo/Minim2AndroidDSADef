@@ -103,6 +103,14 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity
+            android:name="edu.upc.dsa.restproject.QuestionActivity"
+            android:exported="true"
+            android:label="@string/app_name" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
 
         <provider
             android:name="com.squareup.picasso.PicassoProvider"

@@ -2719,6 +2719,7 @@ id buttonAbuse
 id buttonEmpezarPartida
 id buttonLogin
 id buttonPanel
+id buttonPregunta
 id buttonRegistro
 id buttonUsuarioRegistrado
 id buttonVerPartidas
@@ -2910,6 +2911,7 @@ id material_timepicker_view
 id material_value_index
 id matrix
 id message
+id messageInput
 id middle
 id mini
 id month_grid
@@ -3034,6 +3036,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id sendButton
 id sharedValueSet
 id sharedValueUnset
 id shopButton
@@ -3076,6 +3079,9 @@ id stop
 id stretch
 id submenuarrow
 id submit_area
+id subtitle
+id subtitle2
+id subtitle3
 id supportScrollUp
 id surnameUsuarioLayout
 id surnameUsuariotext
@@ -3126,6 +3132,8 @@ id time
 id title
 id title2
 id titleDividerNoCustom
+id titleInput
+id titleQuestions
 id title_template
 id toggle
 id top
@@ -3338,6 +3346,7 @@ layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout principal_main
+layout question_activity
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

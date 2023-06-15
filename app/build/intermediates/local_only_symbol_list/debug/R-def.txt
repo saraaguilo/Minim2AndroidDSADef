@@ -26,6 +26,7 @@ id answer
 id buttonAbuse
 id buttonEmpezarPartida
 id buttonLogin
+id buttonPregunta
 id buttonRegistro
 id buttonUsuarioRegistrado
 id buttonVerPartidas
@@ -43,6 +44,7 @@ id faqtitle
 id idItem
 id itemImage
 id linea
+id messageInput
 id my_new_imageView
 id my_new_recycler_view
 id name
@@ -59,9 +61,13 @@ id question
 id returnBtn
 id returnBtn2
 id scrollView
+id sendButton
 id shopButton
 id shoptitle
 id spanishlanguage
+id subtitle
+id subtitle2
+id subtitle3
 id surnameUsuarioLayout
 id surnameUsuariotext
 id tableLayout
@@ -74,6 +80,8 @@ id textView6
 id textView7
 id textView8
 id title2
+id titleInput
+id titleQuestions
 layout abuse_activity
 layout activity_faq
 layout activity_faqcard
@@ -84,6 +92,7 @@ layout activity_main
 layout activity_registro
 layout activity_tienda
 layout principal_main
+layout question_activity
 mipmap ic_launcher
 mipmap ic_launcher_round
 string ReturnBtn2
