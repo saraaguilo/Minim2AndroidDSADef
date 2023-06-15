@@ -28,9 +28,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     public Button buttonAbuse;
     public Button FAQButton;
     public Button LanguageButton;
-
     public ProgressBar progressBar;
-   // public String userId;
+    public String idUser;
     Api APIservice;
 
     @Override
@@ -38,10 +37,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-/*
-        SharedPreferences sharedPreferences = getSharedPreferences("userId", Context.MODE_PRIVATE);
-        this.userId = sharedPreferences.getString("userId", null).toString();
-        this.getUserById(this.userId);*/
+
+        /*SharedPreferences sharedPreferences = getSharedPreferences("idUser", Context.MODE_PRIVATE);
+        this.idUser = sharedPreferences.getString("idUser", null).toString();*/
+        //this.getUserById(this.idUser);
         this.initializeViews();
     }
 
@@ -55,7 +54,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 startActivity(i);
                 break;
             case R.id.shopButton:
-                //saveUserId(this.userId);
+                //saveidUser(this.idUser);
                 i = new Intent(this, TiendaActivity.class);
                 startActivity(i);
                 break;
@@ -92,19 +91,19 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         LanguageButton.setOnClickListener(this);
     }
 
-    public void saveVariables(idUser userId) {
-        SharedPreferences sharedPreferences = getSharedPreferences("userId", Context.MODE_PRIVATE);
+    public void saveVariables(idUser idUser) {
+        SharedPreferences sharedPreferences = getSharedPreferences("idUser", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putString("id", userId.getIdUser());
-        Log.i("SAVING: ", userId.getIdUser());
+        editor.putString("idUser", idUser.getIdUser());
+        Log.i("SAVING: ", idUser.getIdUser());
         editor.apply();
     }
 
-    public void saveUserId(String userId) {
-        SharedPreferences sharedPreferences = getSharedPreferences("userId", Context.MODE_PRIVATE);
+    public void saveidUser(String idUser) {
+        SharedPreferences sharedPreferences = getSharedPreferences("idUser", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putString("userId", userId);
-        Log.i("SAVING: ", userId);
+        editor.putString("idUser", idUser);
+        Log.i("SAVING: ", idUser);
         editor.apply();
     }
 

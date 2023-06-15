@@ -1,9 +1,11 @@
 package edu.upc.dsa.restproject;
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.util.DisplayMetrics;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,11 +33,14 @@ public class LanguageActivity extends AppCompatActivity {
     }
 
     private void setLocale(String language) {
-        Resources resources = getResources();
-        Configuration configuration = resources.getConfiguration();
-        configuration.setLocale(new Locale(language));
-        resources.updateConfiguration(configuration, resources.getDisplayMetrics());
-        restartActivity(LoginActivity.class); //s'haura de modificar i ficar l'activitat del perfil
+        Locale locale = new Locale(language);
+        Locale.setDefault(locale);
+
+        Configuration configuration = getBaseContext().getResources().getConfiguration();
+        configuration.setLocale(locale);
+        configuration.setLayoutDirection(locale);
+        Intent intentRegister = new Intent(LanguageActivity.this, LoginActivity.class);
+        this.startActivity(intentRegister);
     }
 
     private void restartActivity(Class<?> cls) {

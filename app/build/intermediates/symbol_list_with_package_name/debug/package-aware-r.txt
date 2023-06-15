@@ -2694,6 +2694,7 @@ id always
 id androidx_window_activity_scope
 id animateToEnd
 id animateToStart
+id answer
 id antiClockwise
 id anticipate
 id arc
@@ -2996,11 +2997,10 @@ id progressBar
 id progress_circular
 id progress_horizontal
 id puntos
+id question
 id radio
 id ratio
 id rectangles
-id recyclerItem
-id relativeLayout
 id returnBtn
 id returnBtn2
 id reverseSawtooth
@@ -3126,7 +3126,6 @@ id time
 id title
 id title2
 id titleDividerNoCustom
-id title_items
 id title_template
 id toggle
 id top
@@ -3261,12 +3260,12 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout abuse_activity
 layout activity_faq
+layout activity_faqcard
 layout activity_itemcard
 layout activity_language
 layout activity_login
 layout activity_main
 layout activity_registro
-layout activity_shop
 layout activity_tienda
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -3364,6 +3363,7 @@ mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 raw firebase_common_keep
 raw keep_arcore
+string ReturnBtn2
 string __arcore_cancel
 string __arcore_continue
 string __arcore_install_app

@@ -45,27 +45,10 @@ public class MainActivity extends AppCompatActivity {
         email = findViewById(R.id.nombreUsuariotext);
         password = findViewById(R.id.passwordtext);
 
-        //buttonLogin = (Button) findViewById(R.id.buttonLogin);
-        //buttonRegistro = (Button) findViewById(R.id.buttonRegistro);
 
-        /*buttonLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                String e = email.getText().toString();
-                String p = password.getText().toString();
-                Boolean Chkemailpass=db.emailpassword(email,password);
-                if(Chkemailpass==true){ //Añadimos llaves ya que va a haber más de una línea de código
-                    Toast.makeText(getApplicationContext(),"Ha iniciado sesión correctamente",Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-                    startActivity(intent);  //Abrimos la otra actividad
-                }else
-                    Toast.makeText(getApplicationContext(),"Email o contraseña incorrectos",Toast.LENGTH_SHORT).show();
-            }
-        });*/
         progressBar = findViewById(R.id.progressBar);
 
-        Toast.makeText(this,"Please register or login if you haven't an account", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"Please register or login if you don't have an account", Toast.LENGTH_SHORT).show();
     }
 
      public void saveData() {

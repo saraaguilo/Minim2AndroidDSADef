@@ -26,17 +26,6 @@
         android:background="@drawable/fondo"
         android:scrollbars="vertical" />
 
-    <ImageView
-        android:id="@+id/my_new_imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginRight="12dp"
-        android:layout_marginBottom="12dp"
-        android:elevation="2dp"
-        android:src="@android:drawable/ic_menu_add" />
-
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="wrap_content"

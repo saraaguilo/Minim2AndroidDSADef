@@ -41,17 +41,20 @@ public class TiendaActivity extends AppCompatActivity implements RecyclerClickVi
 
     Api APIservice;
     String idUser;
-
+    String idItem;
+    String name;
+    String description;
+    String price;
     private RecyclerView recyclerViewItems;
     private RecyclerViewAdapterItems adapterItems;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_shop);
-        getidUser();
+        setContentView(R.layout.activity_tienda);
+        //getidUser();
 
-        recyclerViewItems = findViewById(R.id.recyclerItem);
+        recyclerViewItems = findViewById(R.id.my_new_recycler_view);
         recyclerViewItems.setLayoutManager(new LinearLayoutManager(this));
         APIservice = RetrofitClient.getInstance().getMyApi();
         Call<List<Item>> call = APIservice.getShop();
@@ -87,16 +90,50 @@ public class TiendaActivity extends AppCompatActivity implements RecyclerClickVi
         editor.putString("idUser", idUser);
         editor.apply();
     }
+    public void getVariables(){
+        SharedPreferences sharedPreferences = getSharedPreferences("Item", Context.MODE_PRIVATE);
+        this.idUser = sharedPreferences.getString("idUser", null);
+        this.idItem = sharedPreferences.getString("idItem", null);
+        this.name = sharedPreferences.getString("name",null);
+        this.description = sharedPreferences.getString("description", null);
+        this.price = sharedPreferences.getString("price", null);
+    }
+
     @Override
     public void recyclerViewListClicked(int position) {
         Item item = adapterItems.items.get(position);
-        Intent intent=new Intent(TiendaActivity.this, LoginActivity.class);
         saveVariables(item, this.idUser);
-        TiendaActivity.this.startActivity(intent);
+        this.getVariables();
+        APIservice = RetrofitClient.getInstance().getMyApi();
+        Call<Void> call = APIservice.buyItems(this.idItem,this.name,this.idUser);
+        call.enqueue(new Callback<Void>() {
+            @Override
+            public void onResponse(Call<Void> call, Response<Void> response) {
+                switch (response.code()){
+                    case 201:
+                        Toast.makeText(TiendaActivity.this,"Successful", Toast.LENGTH_SHORT).show();
+                        break;
+                    case 403:
+                        Toast.makeText(TiendaActivity.this,"Insufficient money!", Toast.LENGTH_SHORT).show();
+                        break;
+                    case 401:
+                        Toast.makeText(TiendaActivity.this,"Item does not exist", Toast.LENGTH_SHORT).show();
+                        break;
+                    case 409:
+                        Toast.makeText(TiendaActivity.this,"Item already purchased", Toast.LENGTH_SHORT).show();
+                        break;
+                }
+            }
+            @Override
+            public void onFailure(Call<Void> call, Throwable t) {
+                Toast.makeText(TiendaActivity.this,"Network Failure", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     public void getidUser(){
         SharedPreferences sharedPreferences = getSharedPreferences("idUser", Context.MODE_PRIVATE);
         this.idUser = sharedPreferences.getString("idUser",null);
+        Log.i("GETTING",this.idUser);
     }
 }
